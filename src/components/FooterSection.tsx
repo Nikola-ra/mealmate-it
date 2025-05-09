@@ -1,6 +1,5 @@
-
-import { Phone, Mail, Youtube, Instagram } from "lucide-react";
-import MealMateLogo from "./MealMateLogo";
+import { Phone, Mail, Youtube, Instagram } from "lucide-react"
+import MealMateLogo from "./MealMateLogo"
 
 const FooterSection = () => {
   return (
@@ -13,8 +12,9 @@ const FooterSection = () => {
               <span className="ml-3 text-2xl font-bold">MealMate</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              MealMate è la tua alleata smart in cucina: un'app intelligente che ti aiuta a ridurre gli sprechi alimentari
-              e a riscoprire il piacere di cucinare in modo sostenibile.
+              MealMate è la tua alleata smart in cucina: un'app intelligente che
+              ti aiuta a ridurre gli sprechi alimentari e a riscoprire il
+              piacere di cucinare in modo sostenibile.
             </p>
             <div className="space-y-2">
               <div className="flex items-center text-gray-300">
@@ -27,25 +27,50 @@ const FooterSection = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">Link Rapidi</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-gray-300 hover:text-mealmate-green transition-colors">Chi siamo</a>
+                  <a
+                    href="#about"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors"
+                  >
+                    Chi siamo
+                  </a>
                 </li>
                 <li>
-                  <a href="#services" className="text-gray-300 hover:text-mealmate-green transition-colors">Servizi</a>
+                  <a
+                    href="#services"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors"
+                  >
+                    Servizi
+                  </a>
                 </li>
                 <li>
-                  <a href="#target" className="text-gray-300 hover:text-mealmate-green transition-colors">Target</a>
+                  <a
+                    href="#target"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors"
+                  >
+                    Target
+                  </a>
                 </li>
                 <li>
-                  <a href="#market" className="text-gray-300 hover:text-mealmate-green transition-colors">Mercato</a>
+                  <a
+                    href="#market"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors"
+                  >
+                    Mercato
+                  </a>
                 </li>
                 <li>
-                  <a href="#business" className="text-gray-300 hover:text-mealmate-green transition-colors">Business</a>
+                  <a
+                    href="#business"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors"
+                  >
+                    Business
+                  </a>
                 </li>
               </ul>
             </div>
@@ -53,16 +78,23 @@ const FooterSection = () => {
               <h3 className="text-lg font-semibold mb-4">Seguici</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://mealmate-it.web.app" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors">mealmate-it.web.app</a>
-                </li>
-                <li>
-                  <a href="https://instagram.com/mealmatebusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center">
+                  <a
+                    href="https://instagram.com/mealmatebusiness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center"
+                  >
                     <Instagram className="h-4 w-4 mr-2 text-mealmate-green" />
                     @mealmatebusiness
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/@MealMateBusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center">
+                  <a
+                    href="https://www.youtube.com/@MealMateBusiness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center"
+                  >
                     <Youtube className="h-4 w-4 mr-2 text-mealmate-green" />
                     @MealMateBusiness
                   </a>
@@ -74,12 +106,13 @@ const FooterSection = () => {
 
         <div className="pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} MealMate - ITI G. Marconi, Lombardia, Italy
+            © {new Date().getFullYear()} MealMate - ITI G. Marconi, Lombardia,
+            Italy
           </p>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FooterSection;
+export default FooterSection
