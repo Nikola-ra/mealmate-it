@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Scan, ChefHat, BookOpen, Clock, Users } from "lucide-react";
+import { Scan, ChefHat, BookOpen, Clock, Users, Utensils } from "lucide-react";
 
 const ServicesSection = () => {
   return (
@@ -45,15 +45,12 @@ const ServicesSection = () => {
             description="Scannerizzare i tuoi prodotti in 5 minuti ti permetterà di risparmiare ore e ore di ragionamento su cosa vorrai cucinare. Affidati al nostro sistema di ricette creative."
             delay="400"
           />
-          
-          <div className="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center justify-center text-center animate-fade-in" style={{ animationDelay: '500ms' }}>
-            <img 
-              src="/lovable-uploads/cfd2f385-d4de-4188-ba6b-cc4877c02daa.png" 
-              alt="MealMate App Interface"
-              className="w-full h-auto rounded-lg shadow-md mb-4 max-w-xs mx-auto"
-            />
-            <p className="text-mealmate-green font-semibold">La nostra app in azione</p>
-          </div>
+          <ServiceCard 
+            icon={<Utensils className="h-12 w-12 text-mealmate-green" />}
+            title="Esperienza utente"
+            description="Abbiamo progettato un'interfaccia intuitiva e facile da usare, per garantirti un'esperienza fluida e piacevole durante l'utilizzo della nostra app, anche per chi è meno esperto di tecnologia."
+            delay="500"
+          />
         </div>
       </div>
     </section>

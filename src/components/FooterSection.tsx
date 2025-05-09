@@ -19,7 +19,7 @@ const FooterSection = () => {
             <div className="space-y-2">
               <div className="flex items-center text-gray-300">
                 <Mail className="h-5 w-5 mr-2 text-mealmate-green" />
-                <span>mealmatebusiness@gmail.com</span>
+                <span>mealmatebusiness2025@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="h-5 w-5 mr-2 text-mealmate-green" />
