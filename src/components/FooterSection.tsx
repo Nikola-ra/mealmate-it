@@ -1,5 +1,5 @@
 
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Youtube, Instagram } from "lucide-react";
 import MealMateLogo from "./MealMateLogo";
 
 const FooterSection = () => {
@@ -56,13 +56,16 @@ const FooterSection = () => {
                   <a href="https://mealmate-it.web.app" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors">mealmate-it.web.app</a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/mealmatebusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors">@mealmatebusiness</a>
+                  <a href="https://instagram.com/mealmatebusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center">
+                    <Instagram className="h-4 w-4 mr-2 text-mealmate-green" />
+                    @mealmatebusiness
+                  </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/MealMateBusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors">@MealMateBusiness</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/mealmatebusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors">mealmatebusiness</a>
+                  <a href="https://www.youtube.com/@MealMateBusiness" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-mealmate-green transition-colors flex items-center">
+                    <Youtube className="h-4 w-4 mr-2 text-mealmate-green" />
+                    @MealMateBusiness
+                  </a>
                 </li>
               </ul>
             </div>
