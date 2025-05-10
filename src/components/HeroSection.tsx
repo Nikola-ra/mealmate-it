@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -27,7 +26,7 @@ const HeroSection = () => {
         <div className="md:translate-x-12 animate-scale-in">
           <div className="rounded-lg overflow-hidden">
             <img 
-              src="/lovable-uploads/76414ac0-c1a6-4228-aa54-85f8d5fafe71.png" 
+              src="/mealmate-it/76414ac0-c1a6-4228-aa54-85f8d5fafe71.png" 
               alt="MealMate Robot Chef"
               className="w-full h-auto"
             />
