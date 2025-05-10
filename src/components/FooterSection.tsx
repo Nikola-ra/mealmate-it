@@ -23,7 +23,7 @@ const FooterSection = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="h-5 w-5 mr-2 text-mealmate-green" />
-                <span>+39 123 456 7890</span>
+                <span className="italic">Work in progress</span>
               </div>
             </div>
           </div>
