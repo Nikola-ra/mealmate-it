@@ -19,7 +19,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="bg-mealmate-green hover:bg-mealmate-dark-green text-white font-semibold px-6 py-6 rounded-lg transition-all duration-300">
-              Scopri di più
+              Prova La Beta
             </Button>
             <Button
               variant="outline"

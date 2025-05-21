@@ -1,8 +1,9 @@
 
 import { Button } from "@/components/ui/button";
 import MealMateLogo from "@/components/MealMateLogo";
-import { Download, Smartphone } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Download as DownloadIcon } from "lucide-react";
 
 const Download = () => {
   const downloadLink = "https://expo.dev/accounts/nikola_rahovic/projects/MealMate/builds/5645c814-01b0-4f0b-9f3f-8b5ef979dd0d";
@@ -51,7 +52,7 @@ const Download = () => {
             className="w-full py-6 bg-mealmate-green hover:bg-mealmate-dark-green text-white text-lg font-semibold rounded-lg flex items-center justify-center gap-2"
             onClick={() => window.open(downloadLink, '_blank')}
           >
-            <Download className="w-5 h-5" /> Scarica ora
+            <DownloadIcon className="w-5 h-5" /> Scarica ora
           </Button>
         </div>
         
