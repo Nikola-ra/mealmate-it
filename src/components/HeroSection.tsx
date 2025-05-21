@@ -1,4 +1,6 @@
+
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
 
 const HeroSection = () => {
   return (
@@ -25,11 +27,16 @@ const HeroSection = () => {
             >
               Contattaci
             </Button>
+            <Link to="/download">
+              <Button className="bg-mealmate-dark-green hover:bg-mealmate-green text-white font-semibold px-6 py-6 rounded-lg transition-all duration-300">
+                Scarica App
+              </Button>
+            </Link>
           </div>
         </div>
 
         <div className="md:translate-x-12 animate-scale-in">
-          <div className="rounded-lg overflow-hidden">
+          <div className="rounded-lg">
             <img
               src="/mealmate-it/lovable-uploads/76414ac0-c1a6-4228-aa54-85f8d5fafe71.png"
               alt="MealMate Robot Chef"
