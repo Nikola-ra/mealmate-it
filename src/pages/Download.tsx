@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import MealMateLogo from "@/components/MealMateLogo";
-import { Smartphone } from "lucide-react";
+import { Smartphone, Carrot, Apple, Banana, Pizza, Hamburger, Egg } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Download as DownloadIcon } from "lucide-react";
 
@@ -9,16 +9,44 @@ const Download = () => {
   const downloadLink = "https://expo.dev/accounts/nikola_rahovic/projects/MealMate/builds/5645c814-01b0-4f0b-9f3f-8b5ef979dd0d";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-mealmate-light-green to-white">
+    <div className="min-h-screen bg-gradient-to-b from-mealmate-light-green to-white relative overflow-hidden">
+      {/* Floating food icons */}
+      <div className="absolute w-full h-full pointer-events-none">
+        {/* Top left */}
+        <div className="absolute top-32 left-10 transform -rotate-45 scale-150 text-mealmate-green animate-pulse">
+          <Carrot />
+        </div>
+        {/* Top right */}
+        <div className="absolute top-24 right-20 transform rotate-45 scale-150 text-orange-400 animate-pulse" style={{animationDelay: "0.3s"}}>
+          <Pizza />
+        </div>
+        {/* Middle left */}
+        <div className="absolute top-1/3 left-12 transform -rotate-12 scale-150 text-yellow-500 animate-pulse" style={{animationDelay: "0.6s"}}>
+          <Banana />
+        </div>
+        {/* Middle right */}
+        <div className="absolute top-2/5 right-12 transform rotate-12 scale-150 text-red-500 animate-pulse" style={{animationDelay: "0.9s"}}>
+          <Apple />
+        </div>
+        {/* Bottom left */}
+        <div className="absolute bottom-32 left-20 transform -rotate-30 scale-150 text-amber-700 animate-pulse" style={{animationDelay: "1.2s"}}>
+          <Hamburger />
+        </div>
+        {/* Bottom right */}
+        <div className="absolute bottom-40 right-16 transform rotate-30 scale-150 text-gray-300 animate-pulse" style={{animationDelay: "1.5s"}}>
+          <Egg />
+        </div>
+      </div>
+
       {/* Header with navigation back to home */}
-      <div className="container mx-auto pt-8">
+      <div className="container mx-auto pt-8 relative z-10">
         <Link to="/" className="text-mealmate-green hover:text-mealmate-dark-green font-medium">
           ← Torna alla home
         </Link>
       </div>
       
       {/* Main content */}
-      <div className="container mx-auto px-4 py-16 flex flex-col items-center">
+      <div className="container mx-auto px-4 py-16 flex flex-col items-center relative z-10">
         <MealMateLogo size={120} className="mb-8 animate-bounce" />
         
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">

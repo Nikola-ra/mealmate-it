@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
 
 const HeroSection = () => {
+  const scrollToFooter = () => {
+    const footer = document.getElementById('contact');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="pt-28 pb-16 md:pt-32 md:pb-20 px-4 bg-gradient-to-b from-mealmate-light-green to-white">
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
@@ -18,20 +25,18 @@ const HeroSection = () => {
             hai già.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-mealmate-green hover:bg-mealmate-dark-green text-white font-semibold px-6 py-6 rounded-lg transition-all duration-300">
-              Prova La Beta
-            </Button>
+            <Link to="/download">
+              <Button className="bg-mealmate-green hover:bg-mealmate-dark-green text-white font-semibold px-6 py-6 rounded-lg transition-all duration-300">
+                Installa la beta
+              </Button>
+            </Link>
             <Button
               variant="outline"
               className="border-mealmate-green text-mealmate-green hover:bg-mealmate-light-green px-6 py-6 rounded-lg transition-all duration-300"
+              onClick={scrollToFooter}
             >
               Contattaci
             </Button>
-            <Link to="/download">
-              <Button className="bg-mealmate-dark-green hover:bg-mealmate-green text-white font-semibold px-6 py-6 rounded-lg transition-all duration-300">
-                Scarica App
-              </Button>
-            </Link>
           </div>
         </div>
 
