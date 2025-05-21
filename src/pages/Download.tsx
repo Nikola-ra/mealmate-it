@@ -1,9 +1,8 @@
 
 import { Button } from "@/components/ui/button";
 import MealMateLogo from "@/components/MealMateLogo";
-import { Smartphone, Carrot, Apple, Banana, Pizza, Hamburger, Egg } from "lucide-react";
+import { Smartphone, Carrot, Apple, Download as DownloadIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Download as DownloadIcon } from "lucide-react";
 
 const Download = () => {
   const downloadLink = "https://expo.dev/accounts/nikola_rahovic/projects/MealMate/builds/5645c814-01b0-4f0b-9f3f-8b5ef979dd0d";
@@ -18,11 +17,11 @@ const Download = () => {
         </div>
         {/* Top right */}
         <div className="absolute top-24 right-20 transform rotate-45 scale-150 text-orange-400 animate-pulse" style={{animationDelay: "0.3s"}}>
-          <Pizza />
+          <Carrot />
         </div>
         {/* Middle left */}
         <div className="absolute top-1/3 left-12 transform -rotate-12 scale-150 text-yellow-500 animate-pulse" style={{animationDelay: "0.6s"}}>
-          <Banana />
+          <Apple />
         </div>
         {/* Middle right */}
         <div className="absolute top-2/5 right-12 transform rotate-12 scale-150 text-red-500 animate-pulse" style={{animationDelay: "0.9s"}}>
@@ -30,11 +29,11 @@ const Download = () => {
         </div>
         {/* Bottom left */}
         <div className="absolute bottom-32 left-20 transform -rotate-30 scale-150 text-amber-700 animate-pulse" style={{animationDelay: "1.2s"}}>
-          <Hamburger />
+          <Carrot />
         </div>
         {/* Bottom right */}
         <div className="absolute bottom-40 right-16 transform rotate-30 scale-150 text-gray-300 animate-pulse" style={{animationDelay: "1.5s"}}>
-          <Egg />
+          <Apple />
         </div>
       </div>
 
