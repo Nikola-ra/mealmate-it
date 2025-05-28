@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding bg-white relative overflow-hidden">
+    <section id="about" className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-bold text-mealmate-black mb-2">La nostra azienda</h2>
