@@ -1,24 +1,12 @@
 
 import MealMateLogo from "./MealMateLogo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useState } from "react";
 
 const AboutSection = () => {
-  const [scrollY, setScrollY] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <section id="about" className="section-padding bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div 
-          className="text-center mb-12"
-          style={{ transform: `translateY(${scrollY * 0.05}px)` }}
-        >
+        <div className="text-center mb-12">
           <h2 className="font-bold text-mealmate-black mb-2">La nostra azienda</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Mealmate è una startup finalizzata a ridurre lo spreco alimentare e aiutare le 
@@ -27,14 +15,8 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div 
-          className="grid md:grid-cols-3 gap-8 mb-16"
-          style={{ transform: `translateY(${scrollY * -0.08}px)` }}
-        >
-          <Card 
-            className="feature-card border-t-4 border-t-mealmate-green animate-fade-in"
-            style={{ transform: `translateY(${scrollY * 0.03}px)` }}
-          >
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <Card className="feature-card border-t-4 border-t-mealmate-green animate-fade-in">
             <CardHeader>
               <CardTitle className="text-xl font-bold text-mealmate-black flex items-center gap-2">
                 <MealMateLogo size={30} />
@@ -50,10 +32,7 @@ const AboutSection = () => {
             </CardContent>
           </Card>
 
-          <Card 
-            className="feature-card border-t-4 border-t-mealmate-green animate-fade-in delay-100"
-            style={{ transform: `translateY(${scrollY * -0.02}px)` }}
-          >
+          <Card className="feature-card border-t-4 border-t-mealmate-green animate-fade-in delay-100">
             <CardHeader>
               <CardTitle className="text-xl font-bold text-mealmate-black flex items-center gap-2">
                 <MealMateLogo size={30} />
@@ -69,10 +48,7 @@ const AboutSection = () => {
             </CardContent>
           </Card>
 
-          <Card 
-            className="feature-card border-t-4 border-t-mealmate-green animate-fade-in delay-200"
-            style={{ transform: `translateY(${scrollY * 0.06}px)` }}
-          >
+          <Card className="feature-card border-t-4 border-t-mealmate-green animate-fade-in delay-200">
             <CardHeader>
               <CardTitle className="text-xl font-bold text-mealmate-black flex items-center gap-2">
                 <MealMateLogo size={30} />
