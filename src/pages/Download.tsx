@@ -79,7 +79,7 @@ const Download = () => {
           La tua nuova app per una cucina intelligente e sostenibile sarà
           <span className="font-bold text-mealmate-green">
             {" "}
-            disponibile entro Agosto 2025
+            disponibile entro Dicembre 2025
           </span>
           .
         </p>
